@@ -1,0 +1,17 @@
+body {
+    font-family: 'Lora', serif;
+    color: #5F5F5F;
+}
+h1 {
+    text-align: center;
+    font-size: 350%;
+    color: #009A68;
+}
+button {
+    border-radius: 10px;
+    margin-top: 2px;
+    padding: 3px 12px 3px 12px;
+}
+h4 {
+    text-align: center;
+}

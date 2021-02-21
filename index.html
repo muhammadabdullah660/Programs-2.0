@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Exercises</title>
+</head>
+
+<body>
+    <h1>Programs</h1><br>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Row 1 -->
+            <!-- Potatoes -->
+            <div class="col-md-4" id="pDiv">
+                <h4>Finding number of "Potatoes" in a string</h4><br>
+                <h6>Enter String Value:</h6>
+                <input id="pot" type="text" placeholder="String value goes here">
+                <button onclick="potatoNum()">Find</button>
+            </div>
+            <!-- Character Matching -->
+            <div class="col-md-4" id="singleCharDiv">
+                <h4>Character in another string</h4><br>
+                <h6>Enter String Values:</h6>
+                <input type="text" id="singleChar" placeholder="Enter a single character" maxlength="1">
+                <input type="text" id="secondStr" placeholder="Another String">
+                <button onclick="charStr()">Find</button>
+            </div>
+            <!-- Bill Calculation -->
+            <div class="col-md-4" id="billDiv">
+                <h4>Bill Calculation</h4><br>
+                <h6>Enter No. of Units:</h6>
+                <input type="text" id="units" placeholder="No. of Units goes here">
+                <button onclick="billCalc()">Calculate</button>
+            </div>
+
+        </div><br><br><br>
+        <!-- Row 2 -->
+        <!-- Salary Calculation -->
+        <div class="row">
+            <div class="col-md-4" id="salaryDiv">
+                <h4>Calculating Salary</h4><br>
+                <h6>Enter Salary Amount:</h6>
+                <input id="salary" type="text" placeholder="Salary goes here">
+                <button onclick="salaryCalc()">Calculate</button>
+            </div>
+            <!-- Credit Card Numbers -->
+            <div class="col-md-4" id="cCNumDiv">
+                <h4>Hiding Credit Card Numbers</h4><br>
+                <h6>Enter Valid Credit Card Number:</h6>
+                <input id="cCNum" type="text" placeholder="Credit Card Num goes here">
+                <button onclick="numHide()">Result</button>
+            </div>
+
+            <div class="col-md-4">
+                <h4>Double Character</h4><br>
+                <h6>Enter :</h6>
+                <input id="doubleChar" type="text" placeholder="String to be Doubled character goes here">
+                <button onclick="doubleCh()">Result</button>
+            </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
