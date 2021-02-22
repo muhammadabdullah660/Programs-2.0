@@ -116,10 +116,15 @@ function numHide() {
 
 function doubleCh() {
     var doubleChar = document.getElementById("doubleChar").value;
-    for (let index = 0; index <= doubleChar.length; index++) {
-        var element = doubleChar.charAt(index);
-        console.log(`${element}${element}`);        
+    var elementCh = "";
+    for (var index = 0; index < doubleChar.length; index++) {
+         elementCh = elementCh + (doubleChar.charAt(index) + doubleChar.charAt(index));       
     }
-    console.log(`${element}${element}`);        
- 
+    console.log(`${elementCh}`); 
+    var outputDoubleCh = document.createElement("p");
+    var nodeDoubleCh = document.createTextNode(`The Reqiured String is ${elementCh}`);
+    outputDoubleCh.appendChild(nodeDoubleCh);
+    var elementDoubleCh = document.getElementById("doubleCharDiv");
+    elementDoubleCh.appendChild(outputDoubleCh);
+
 }
