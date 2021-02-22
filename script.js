@@ -113,18 +113,47 @@ function numHide() {
     var elementCCNum = document.getElementById("cCNumDiv");
     elementCCNum.appendChild(outputCCNum);
 }
-
+// Dobule Character
 function doubleCh() {
     var doubleChar = document.getElementById("doubleChar").value;
     var elementCh = "";
     for (var index = 0; index < doubleChar.length; index++) {
-         elementCh = elementCh + (doubleChar.charAt(index) + doubleChar.charAt(index));       
+        elementCh = elementCh + (doubleChar.charAt(index) + doubleChar.charAt(index));
     }
-    console.log(`${elementCh}`); 
+    console.log(`${elementCh}`);
     var outputDoubleCh = document.createElement("p");
     var nodeDoubleCh = document.createTextNode(`The Reqiured String is ${elementCh}`);
     outputDoubleCh.appendChild(nodeDoubleCh);
     var elementDoubleCh = document.getElementById("doubleCharDiv");
     elementDoubleCh.appendChild(outputDoubleCh);
 
+}
+
+function multiples() {
+    var multiple = document.getElementById("multiple").value;
+    var sum = 0;
+    combine = "";
+    if (multiple > 1000 || multiple === "") {
+        alert("Value should be less than or equal to 1000 for finding multiples")
+    }
+    else {
+        console.log("Multiples are:");
+        for (var num = 1; num < multiple; num++) {
+            if ((num % 3 === 0) || (num % 5 === 0)) {
+                sum = sum + num;
+                var multipleNum = num.toString();
+                console.log(multipleNum);
+                if (num > 0) {
+                    combine += "*" + num;
+                }
+            }
+        }
+        console.log(sum);
+        var outputMultiple = document.createElement("p");
+        var nodeMultiple = document.createTextNode(` Multiples are ${combine} and Sum = ${sum} `);
+        outputMultiple.appendChild(nodeMultiple);
+        var elementMultiple = document.getElementById("multipleDiv");
+        elementMultiple.appendChild(outputMultiple);
+
+    }
 }
